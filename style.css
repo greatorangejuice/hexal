@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+    color: #319080;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+header {
+  
+
+}
+
+nav {
+    background: #323232;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+}
+
+nav li a {
+    padding: 0 10px;
+}
+
+.header-triangle {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 26px 45px 0 45px;
+border-color: #323232 transparent transparent transparent;
+margin: 0 auto;
+}
+
+.nav_circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+
+}
+
+.nav_links {
+    margin-bottom: 15px;
+}
+
+.test {
+    margin-right: 28px; 
+    /* Здесь выровнял треугольник */
+}
+
+.test2 {
+    margin-left: 25px;
+}
+
