@@ -75,17 +75,50 @@ nav li a {
 
 }
 
-.container h2 {
-    font-size: 30pt;
+h2 {
+    font-size: 30px;
+    color: rgba(215, 252, 245, 255);
+}
+h3 {
+    font-size: 18px;
+    color: rgba(32, 129, 109, 255);
+}
+
+.container p {
+    font-family: ' Lato-Regular', 'MyriadPro-Regular';
+    font-size: 12pt;
     color: rgba(215, 252, 245, 255);
 }
 
-.container h3 {
-    font-size: 18pt;
-    color: rgba(32, 129, 109, 255);
+footer {
+    background: #323232;
 }
-.container p {
-    font-family:' Lato-Regular', 'MyriadPro-Regular';
-    font-size: 12pt;
+
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column; 
+}
+
+form input{
+    background: #454545;
+    padding: 19px;
+    border: none;
+    margin: 3px;
+}
+
+.form-title {
     color: rgba(215, 252, 245, 255);
+    font-size: 30px;
+}
+
+.form-title_second {
+    color: rgba(215, 252, 245, 255);
+    font-size: 18px;
+    font-family: ' Lato-Regular', 'MyriadPro-Regular';
+}
+
+.button {
+    width: 90px;
+    height: 37px;
 }
