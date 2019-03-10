@@ -231,20 +231,37 @@ form textarea::placeholder {
 .contacts {
     display: flex;
     flex-direction: column;
+    font-family: ' Lato-Regular', 'MyriadPro-Regular';
+    color: rgba(224, 224, 224, 255);
+    font-size: 12px;
+    position: relative;
+    top: 23px;
+    left: 70px;
+    text-align: justify;
 }
 
-.copyring {
+
+.copyring-container {
+
     height: 43px;
     color: #454545;
     background: #222222;
     display: flex;
+    
+}
+
+.copyring {
+    width: 1020px;
+    margin: 0 auto;
+ 
   
 }
 .copyring span {
+    position: relative;
     font-size: 9pt;
     font-family: ' Lato-Regular', 'MyriadPro-Regular';
-    margin-left: 33px;
-    margin-top: 16px; 
+    top: 16px;
+    left: 39px;
 }
 
 
