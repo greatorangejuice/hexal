@@ -140,7 +140,7 @@ h3 {
     font-size: 18px;
     color: rgba(32, 129, 109, 255);
 }
-
+/* --------------------------------- FOOTER --------------------------------- */
 footer {
     box-sizing: border-box;
     background: #323232;
@@ -226,6 +226,11 @@ form textarea::placeholder {
     position: relative;
     top: 23px;
     text-align: justify;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
 }
 
 .copyring {
@@ -397,12 +402,12 @@ form textarea::placeholder {
 
 @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.eot?66712249');
-    src: url('../font/fontello.eot?66712249#iefix') format('embedded-opentype'),
-         url('../font/fontello.woff2?66712249') format('woff2'),
-         url('../font/fontello.woff?66712249') format('woff'),
-         url('../font/fontello.ttf?66712249') format('truetype'),
-         url('../font/fontello.svg?66712249#fontello') format('svg');
+    src: url('../assets/font/fontello.eot?66712249');
+    src: url('../assets/font/fontello.eot?66712249#iefix') format('embedded-opentype'),
+         url('../assets/font/fontello.woff2?66712249') format('woff2'),
+         url('../assets/font/fontello.woff?66712249') format('woff'),
+         url('../assets/font/fontello.ttf?66712249') format('truetype'),
+         url('../assets/font/fontello.svg?66712249#fontello') format('svg');
     font-weight: normal;
     font-style: normal;
   }
