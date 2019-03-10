@@ -69,7 +69,7 @@ nav li a {
     margin-left: 25px;
 }
 
-.container {
+.profile {
     font-family: 'MavenProRegular', 'AdobeInvisFont', 'MyriadPro-Regular';
     background: #2eb398;
     height: 341px;
@@ -86,27 +86,29 @@ h3 {
     color: rgba(32, 129, 109, 255);
 }
 
-.container p {
+.profile p {
     font-family: ' Lato-Regular', 'MyriadPro-Regular';
     font-size: 12pt;
     color: rgba(215, 252, 245, 255);
 }
 
 footer {
+    box-sizing: border-box;
     background: #323232;
     display: flex;
 }
 
 form {
-    width: 500px;
+    width: 580px;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
+    margin-left: 120px;
+    padding-top: 85px; 
 }
 
 form input {
     background: #454545;
-    padding: 10px;
+    padding: 13px;
     border: none;
     margin-bottom: 16px;
 }
@@ -118,6 +120,7 @@ form input::placeholder {
 
 form textarea {
     background: #454545;
+    height: 150px;
     border: none;
 }
 
@@ -138,7 +141,7 @@ form textarea::placeholder {
 }
 
 .button {
-    margin-left: 490px;
+    margin-left: 410px;
     margin-top: 16px;
     width: 90px;
     height: 37px;
@@ -151,4 +154,24 @@ form textarea::placeholder {
 .describe {
     font-family: ' Lato-Regular', 'MyriadPro-Regular';
     color: rgba(224, 224, 224, 255);
+}
+
+.footer_container {
+    margin: 0 auto;
+    width: 1020px;
+    height: 564px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.describe {
+    width: 180px;
+    height: 117px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-top: 134px; 
+    padding-right: 120px;
+    text-align: justify;
 }
