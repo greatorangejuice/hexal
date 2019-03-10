@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 255);
     font-size: 10px;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
@@ -49,10 +49,15 @@ nav li a {
     margin: 0 auto;
 }
 
-.nav_circle {
-    width: 4px;
-    height: 4px;
-    border-radius: 100%;
+.circle {
+    width: 2px;
+    height: 2px;
+    background: rgba(255, 255, 255, 255);
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    position: relative;
+    bottom: -1px;
 
 }
 
@@ -73,7 +78,55 @@ nav li a {
     font-family: 'MavenProRegular', 'AdobeInvisFont', 'MyriadPro-Regular';
     background: #2eb398;
     height: 341px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
 
+.profile_describe {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 17px;
+    top: 62px;
+ 
+}
+
+.profile_describe h2 {
+    margin-bottom: -2px;
+}
+
+.profile_describe h3 {
+    margin-bottom: 15px;
+}
+
+.profile_describe_lorem {
+    font-size: 12px;
+    width: 581px;
+    height: 76px;
+    font-family: 'Lato-Regular', 'MyriadPro-Regular';
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    line-height: 1.9;
+}
+
+.profile_vertical_line {
+    width: 1px;
+    height: 316px;
+    background: #219d84;
+    position: relative;
+
+}
+
+.right {
+    top: 13px;
+    left: -20px;
+}
+
+.left {
+    top: 13px;
+    left: 38px;
 }
 
 h2 {
@@ -84,12 +137,6 @@ h2 {
 h3 {
     font-size: 18px;
     color: rgba(32, 129, 109, 255);
-}
-
-.profile p {
-    font-family: ' Lato-Regular', 'MyriadPro-Regular';
-    font-size: 12pt;
-    color: rgba(215, 252, 245, 255);
 }
 
 footer {
@@ -103,7 +150,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-left: 120px;
-    padding-top: 85px; 
+    padding-top: 85px;
 }
 
 form input {
@@ -140,8 +187,8 @@ form textarea::placeholder {
 
 }
 
-.button {
-    margin-left: 410px;
+.button_send {
+    margin-left: 490px;
     margin-top: 16px;
     width: 90px;
     height: 37px;
@@ -151,27 +198,172 @@ form textarea::placeholder {
     font-size: 12px;
 }
 
-.describe {
-    font-family: ' Lato-Regular', 'MyriadPro-Regular';
-    color: rgba(224, 224, 224, 255);
-}
-
 .footer_container {
     margin: 0 auto;
     width: 1020px;
     height: 564px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .describe {
+    font-family: ' Lato-Regular', 'MyriadPro-Regular';
+    color: rgba(224, 224, 224, 255);
     width: 180px;
     height: 117px;
     font-size: 12px;
     line-height: 1.5;
     padding-left: 20px;
-    padding-top: 134px; 
+    padding-top: 134px;
     padding-right: 120px;
     text-align: justify;
 }
+
+
+
+
+/* HEXAGONS */
+.hexagon {
+    width: 182px;
+    height: 209px;
+    margin: 0 9px;
+    transform: rotate(120deg);
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.smith {
+    margin: auto 0;
+}
+
+.hex-layer-1 {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    overflow: hidden;
+}
+
+.hex-layer-2 {
+    width: 100%;
+    height: 100%;
+    background: #ccc3;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.smith-layer {
+    width: 100%;
+    height: 100%;
+    background: #ccc3;
+    transform: rotate(-60deg);
+    overflow: hidden;
+    visibility: visible;
+    background-image: url(../assets/smith.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?66712249');
+    src: url('../font/fontello.eot?66712249#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?66712249') format('woff2'),
+         url('../font/fontello.woff?66712249') format('woff'),
+         url('../font/fontello.ttf?66712249') format('truetype'),
+         url('../font/fontello.svg?66712249#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?66712249#fontello') format('svg');
+    }
+  }
+  */
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+  .icon-twitter:before { content: '\f099'; } /* '' */
+  .icon-facebook:before { content: '\f09a'; } /* '' */
+  .icon-linkedin:before { content: '\f0e1'; } /* '' */
+  .icon-dribbble:before { content: '\f17d'; } /* '' */
+  .icon-pinterest:before { content: '\f231'; } /* '' */
+  .icon-gplus:before { content: '\f30f'; } /* '' */
+
+.social_wrapper {
+    position: relative;
+    left: 415px;
+    top: 33px;
+}
+  .social_list li {
+      display: inline-block;
+      position: relative;
+      top: 10px;
+      left: 10px;
+  }
+
+  .item_social {
+      width: 24px;
+      height: 24px;
+      font-size: 13px;
+      color: #04ac95;
+      background: #a5dbd4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* text-decoration: none; */
+  }
+
+  .item_social:hover {
+    background: #6ccbbe;
+  }

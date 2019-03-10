@@ -19,14 +19,14 @@
         <nav>
             <ul>
                 <li class="nav_links"><a href="#">Portfolio</a></li>
-                <li class="nav_links"><span class="nav_circle"></span></li>
+                <li class="nav_links circle"></li>
                 <li class="nav_links nav-left_links"><a href="#">About</a></li>
                 <h1>
-                    <a href="#"><img class="logo" src="/hexal/assets/Logo@1X.png" alt="Hexal"></a>
+                    <a href="#"><img class="logo" src="/assets/Logo@1X.png" alt="Hexal"></a>
                 </h1>
                 <li class="nav_links nav-right_links"><a href="#">Blog</a></li>
-                <li class="nav_links"> <span class="nav_circle"></span></li>
-                <li class="nav_links"><a href="#">Get in touch</a></li>
+                <li class="nav_links circle"> </li>
+                <li class="nav_links"><a href="#get_in_touch">Get in touch</a></li>
             </ul>
         </nav>
 
@@ -54,59 +54,47 @@
                         <div class="hex-layer-2"></div>
                     </div>
                 </div>
-
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
             </div>
 
-            <div class="second-line_container">
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
-
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
-
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
-
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
-
-                <div class="hexagon">
-                    <div class="hex-layer-1">
-                        <div class="hex-layer-2"></div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <section class="profile">
-            <h2>Smith Anderson</h2>
-            <h3>Illustrator & Character Designer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam facere aliquid vitae modi?
-                Voluptates, hic exercitationem aspernatur itaque veniam quia culpa fugit in est nam distinctio? Magni,
-                odit itaque?</p>
+            <div class="profile_vertical_line right"></div>
+            <div class="hexagon smith">
+                <div class="hex-layer-1">
+                    <div class="smith-layer"></div>
+                </div>
+            </div>
+            <div class="profile_describe">
+                <h2 class="profile_describe_smith">Smith Anderson</h2>
+                <h3>Illustrator & Character Designer</h3>
+                <p class="profile_describe_lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                    porttitor, nibh at sagittis tristique, enim magna pretium augue, eget consectetur sem dui non urna.
+                    Integer gravida, diam congue molestie fringilla, elit odio rhoncus turpis, ac dictum libero elit
+                    vel metus. Morbi egestas sit amet velit eget venenatis. Mauris porttitor, nibh at sagittis
+                    tristique, enim magna pretium augue, eget consectetur sem dui non urna</p>
+
+                    <div class="social_wrapper">
+                            <ul class="social_list">
+                                <li><a href="#" class="item_social"><i class="icon-facebook"></i></a></li>
+                                <li><a href="#" class="item_social"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" class="item_social"><i class="icon-gplus"></i></a></li>
+                                <li><a href="#" class="item_social"><i class="icon-pinterest"></i></a></li>
+                                <li><a href="#" class="item_social"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#" class="item_social"><i class="icon-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+            </div>
+
+         
+
+            <div class="profile_vertical_line left"></div>
         </section>
     </main>
 
     <footer>
 
-        <div class="footer_container">
+        <div class="footer_container" id="get_in_touch">
 
             <form class="form">
                 <label for="test" class="form-title">
@@ -119,11 +107,12 @@
                 <input type="email" placeholder="Email(required)" required>
                 <input type="text" placeholder="Subject">
                 <textarea name="test" cols="30" rows="10" placeholder="  Write your message here..." required></textarea>
-                <button class="button">SEND</button>
+                <button class="button_send">SEND</button>
             </form>
-    
+
             <div class="describe">
-                <p><strong>Quisque Hendrerit:</strong> purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit
+                <p><strong>Quisque Hendrerit:</strong> purus dapi- <wbr> bus, ornare nibh vitae, viverra nibh.<wbr>  Fusce vitae
+                    aliquam tellus. Proin sit
                     amet volutpat libero. Nulla sed nunc et tortor luctus faucibus morbi vitae. </p>
             </div>
         </div>
